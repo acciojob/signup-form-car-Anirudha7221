@@ -3,39 +3,6 @@
 <html>
 
 <head>
-	<form>
-	<label for="name">Name :</label>
-	<input type="text" id="#name" placeholder="Name" required>
-	<br><br>
-	<label for="email">Email :</label>
-	<input type="email" id="#email" placeholder="Email" required>
-	<br><br>
-	<label for="gender">Gender :</label>
-	<input type="radio" name="gender" id="#gender_m" required>Male
-	<input type="radio" name="gender" id="#gender-_f" required>Female
-	<br><br>
-	<label for="cars">Car Brands :</label>
-	<input type="checkbox" id="#cars">BMW
-	<input type="checkbox" id="#cars">Audi
-	<input type="checkbox" id="#cars">Mercedez
-	<br><br>
-	<label for="age">Age :</label>
-	<input type="number" id="#age" placeholder="Age" required>
-	<br><br>
-	<label for="dob">DOB :</label>
-	<input type="datetime-local" id="#dob" required>
-	<br><br>
-	<label for="phone-no">Phone Number :</label>
-	<input type="tel" id="#tel" placeholder="xxx-xxx-xxxx" required>
-	<br><br>
-	<label for="password">Password :</label>
-	<input type="password" id="#password" placeholder="Password" required>
-	<br><br>
-	<input type="checkbox">
-	<lebel>I Agree to the Tos</lebel>
-	<br><br>
-	<button type="submit">Submit</button>
-	</form>	
 	<link rel="stylesheet" href="styles.css">
 </head>
 
@@ -43,7 +10,35 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+<form method="post">
+    <label for="name">Name :</label>
+    <input type="text" id="#name" placeholder="Enter your name" required>
+    <br><br>
+    <label for="email">Email :</label>
+    <input type="email" id="#email" placeholder="Enter your email id" required>
+    <br><br>
+    <label for="gender">Gender :</label>
+    <input type="radio" name="gender" id="#gender_m">Male
+    <input type="radio" name="gender" id="#gender_f">Female
+    <input type="radio" name="gender">Other
+    <br><br>
+    <label for="age">Age :</label>
+    <input type="number" id="#age" placeholder="Enter your age" required>
+    <br><br>
+    <label for="dob">DOB :</label>
+    <input type="date" id="#dob" required>
+    <br><br>
+    <label for="tel">Phone Number :</label>
+    <input type="tel" id="#tel" placeholder="xxx-xxx-xxxx">
+    <br><br>
+    <label for="password">Password :</label>
+    <input type="password" id="#password" placeholder="Enter password" required>
+    <br><br>
+    <input type="checkbox" id="#tos" required>
+    <label for="tos">I agree to the TOS</label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 
 </html>
