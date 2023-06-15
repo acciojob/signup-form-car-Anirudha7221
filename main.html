@@ -10,39 +10,40 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-<form method="post">
-    <label for="name">Name :</label>
-    <input type="text" id="#name" placeholder="Enter your name" required>
+<form id="my-form" method="post">
+    <label for="name">1.Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
     <br><br>
-    <label for="email">Email :</label>
-    <input type="email" id="#email" placeholder="Enter your email id" required>
+    <label for="email">2.Email</label>
+    <input type="email" id="email" placeholder="Enter your email id" required>
     <br><br>
-    <label for="gender">Gender :</label>
-    <input type="radio" name="gender" id="#gender_m">Male
-    <input type="radio" name="gender" id="#gender_f">Female
+    <label for="gender">3.Gender</label>
+    <input type="radio" name="gender" id="gender_m">Male
+    <input type="radio" name="gender" id="gender_f">Female
     <input type="radio" name="gender">Other
     <br><br>
-	<label for="cars">Choose your car :</label>
-	<select id="#cars" aria-required>
-		<option value="BMW">BMW</option>
-		<option value="audi">Audi</option>
-		<option value="mercedez">Mercedez</option>
+	<label for="cars">4.Choose your car</label>
+	<select name="cars" id="cars" required>
+		<option value="" disabled selected>--Please choose an option--</option>
+		<option>BMW</option>
+		<option>Audi</option>
+		<option>Mercedez</option>
 	</select>	
 	<br><br>
-    <label for="age">Age :</label>
-    <input type="number" id="#age" placeholder="Enter your age" required>
+    <label for="age">5.Age</label>
+    <input type="number" id="age" min="0" placeholder="Enter your age" required>
     <br><br>
-    <label for="dob">DOB :</label>
-    <input type="date" id="#dob" required>
+    <label for="dob">6.DOB</label>
+    <input type="date" id="dob" required>
     <br><br>
-    <label for="tel">Phone Number :</label>
-    <input type="tel" id="#tel" placeholder="xxx-xxx-xxxx">
+    <label for="tel">7.Phone Number</label>
+    <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
     <br><br>
-    <label for="password">Password :</label>
-    <input type="password" id="#password" placeholder="Enter password" required>
+    <label for="password">8.Password</label>
+    <input type="password" id="password" placeholder="Enter password" required>
     <br><br>
-    <input type="checkbox" id="#tos" required>
-    <label for="tos">I agree to the TOS</label>
+    <input type="checkbox" name="tos" id="tos" required>
+    <label for="tos"><b>I agree to the TOS</b></label>
     <br><br>
     <button type="submit">Submit</button>
   </form>
